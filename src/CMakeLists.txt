@@ -1,0 +1,7 @@
+add_subdirectory(wireless)
+add_subdirectory(devices)
+add_subdirectory(features)
+add_subdirectory(interface)
+add_subdirectory(ui)
+add_subdirectory(app)
+add_subdirectory(test)

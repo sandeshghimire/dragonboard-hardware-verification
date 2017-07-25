@@ -1,0 +1,6 @@
+add_subdirectory(coreadc)
+add_subdirectory(coregpio)
+add_subdirectory(corespi)
+add_subdirectory(corei2c)
+add_subdirectory(corei2s)
+add_subdirectory(coremipi)

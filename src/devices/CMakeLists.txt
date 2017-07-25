@@ -1,0 +1,7 @@
+add_subdirectory(als)
+add_subdirectory(axl)
+add_subdirectory(bq25898)
+add_subdirectory(drv3605)
+add_subdirectory(maxq610)
+add_subdirectory(spq0410hr5hb)
+add_subdirectory(tps4348)
