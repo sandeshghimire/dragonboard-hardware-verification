@@ -7,7 +7,9 @@
 
 class SPQ0410HR5HB
 {
-
+ public:
+    SPQ0410HR5HB();
+    virtual ~SPQ0410HR5HB();
 };
 
 #endif //_SPQ0410HR5HB_HPP_

@@ -1,1 +1,7 @@
 #include "spq0410hr5hb.hpp"
+SPQ0410HR5HB::SPQ0410HR5HB()
+{}
+SPQ0410HR5HB::~SPQ0410HR5HB()
+{
+
+}

@@ -7,7 +7,9 @@
 
 class BackLight
 {
-
+ public:
+    BackLight();
+    virtual ~BackLight();
 };
 
 #endif //_ADC_HPP_

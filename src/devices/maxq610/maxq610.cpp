@@ -3,3 +3,9 @@
 //
 
 #include "maxq610.hpp"
+MAXQ610::~MAXQ610()
+{
+
+}
+MAXQ610::MAXQ610()
+{}

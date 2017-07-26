@@ -7,6 +7,9 @@
 
 class SelfTest
 {
+ public:
+    SelfTest();
+    virtual ~SelfTest();
 
 };
 

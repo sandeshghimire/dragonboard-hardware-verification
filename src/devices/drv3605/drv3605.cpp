@@ -3,3 +3,9 @@
 //
 
 #include "drv3605.hpp"
+DRV3605::DRV3605()
+{}
+DRV3605::~DRV3605()
+{
+
+}

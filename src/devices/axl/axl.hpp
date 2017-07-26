@@ -7,7 +7,9 @@
 
 class AXL
 {
-
+ public:
+    AXL();
+    virtual ~AXL();
 };
 
 #endif //_AXL_HPP_

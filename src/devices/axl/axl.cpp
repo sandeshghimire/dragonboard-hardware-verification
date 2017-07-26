@@ -3,3 +3,9 @@
 //
 
 #include "axl.hpp"
+AXL::AXL()
+{}
+AXL::~AXL()
+{
+
+}

@@ -3,3 +3,9 @@
 //
 
 #include "self_test.hpp"
+SelfTest::SelfTest()
+{}
+SelfTest::~SelfTest()
+{
+
+}

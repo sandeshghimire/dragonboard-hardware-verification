@@ -7,7 +7,9 @@
 
 class FuelGauge
 {
-
+ public:
+    FuelGauge();
+    virtual ~FuelGauge();
 };
 
 #endif //_ADC_HPP_

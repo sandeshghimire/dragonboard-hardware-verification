@@ -3,3 +3,9 @@
 //
 
 #include "als.hpp"
+ALS::ALS()
+{}
+ALS::~ALS()
+{
+
+}

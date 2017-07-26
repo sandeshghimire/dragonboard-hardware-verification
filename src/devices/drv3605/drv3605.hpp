@@ -7,7 +7,9 @@
 
 class DRV3605
 {
-
+ public:
+    DRV3605();
+    virtual ~DRV3605();
 };
 
 #endif //_ADC_HPP_

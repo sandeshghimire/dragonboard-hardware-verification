@@ -7,7 +7,9 @@
 
 class MAXQ610
 {
-
+ public:
+    MAXQ610();
+    virtual ~MAXQ610();
 };
 
 #endif //_MAXQ610_HPP_

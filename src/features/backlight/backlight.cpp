@@ -3,3 +3,9 @@
 //
 
 #include "backlight.hpp"
+BackLight::BackLight()
+{}
+BackLight::~BackLight()
+{
+
+}

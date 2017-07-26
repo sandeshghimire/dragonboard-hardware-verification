@@ -7,7 +7,9 @@
 
 class ALS
 {
-
+ public:
+    ALS();
+    virtual ~ALS();
 };
 
 #endif //_ALS_HPP_

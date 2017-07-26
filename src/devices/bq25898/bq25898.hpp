@@ -7,7 +7,9 @@
 
 class BQ25898
 {
-
+ public:
+    BQ25898();
+    virtual ~BQ25898();
 };
 
 #endif //_ADC_HPP_

@@ -7,7 +7,9 @@
 
 class TPS4348
 {
-
+ public:
+    TPS4348();
+    virtual ~TPS4348();
 };
 
 #endif //_ADC_HPP_
