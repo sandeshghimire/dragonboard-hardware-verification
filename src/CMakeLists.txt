@@ -1,5 +1,5 @@
 add_subdirectory(wireless)
-add_subdirectory(devices)
+add_subdirectory(components)
 add_subdirectory(features)
 add_subdirectory(interface)
 add_subdirectory(ui)
