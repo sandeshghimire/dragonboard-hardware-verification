@@ -28,7 +28,7 @@ class SPI{
     unsigned char _mode;
     unsigned char _bitsPerWord;
     unsigned int _speed;
-    int spifd;
+    int _spifd;
 
  private:
     int _open(std::string devspi);
