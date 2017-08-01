@@ -29,10 +29,10 @@ int Menu::mainMenu()
     cout << "6" << setw(_menu_width) << "MIPI test " << endl;
     cout << endl;
     cout << "7" << setw(_menu_width) << "ALS  test " << endl;
-    cout << "8" << setw(_menu_width) << "AXL  test " << endl;
+    cout << "8" << setw(_menu_width) << "DigitalAmbientLightSensor  test " << endl;
     cout << endl;
     cout << "7" << setw(_menu_width) << "ALS  test " << endl;
-    cout << "8" << setw(_menu_width) << "AXL  test " << endl;
+    cout << "8" << setw(_menu_width) << "DigitalAmbientLightSensor  test " << endl;
     cout << endl;
     cout << "B" << setw(_menu_width) << "Go Back  " << endl;
     cout << "M" << setw(_menu_width) << "Menu " << endl;

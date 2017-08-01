@@ -1,0 +1,10 @@
+
+#ifndef DISPLAYDESERIALIZER_HPP
+#define DISPLAYDESERIALIZER_HPP
+
+class DisplayDeserializer
+{
+
+};
+
+#endif //DISPLAYDESERIALIZER_HPP

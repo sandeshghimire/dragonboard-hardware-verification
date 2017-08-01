@@ -1,15 +1,15 @@
 set(CMAKE_XCODE_ORGANIZATIONNAME "EVA Automation, Inc.")
-project(axl)
+project(display_deserializer)
 cmake_minimum_required(VERSION 3.3)
 
 list(
         APPEND HEADER_FILES
-        axl.hpp
+        display_deserializer.hpp
 )
 
 list(
         APPEND SOURCE_FILES
-        axl.cpp
+        display_deserializer.cpp
 )
 
 set(ALL_SOURCE_FILES ${HEADER_FILES} ${SOURCE_FILES})

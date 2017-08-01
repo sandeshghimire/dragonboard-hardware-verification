@@ -2,48 +2,21 @@
 // Created by Sandesh Ghimire on 7/20/17.
 //
 
-#ifndef _AXL_HPP_
-#define _AXL_HPP_
+#ifndef _DIGITALAMBIENTLIGHTSENSOR_HPP_
+#define _DIGITALAMBIENTLIGHTSENSOR_HPP_
 
 #include <memory>
 
-#define ALS_12C_SLAVE_ADDR 0x29
 
-#define ALS_CONTROL_ADDR 0x80
-#define ALS_CONTROL_RST 0x00
 
-#define ALS_MEAS_RATE_ADDR 0x85
-#define ALS_MEAS_RATE_RST 0x03
+class DigitalAmbientLightSensor;
+typedef std::shared_ptr<DigitalAmbientLightSensor> AXLRef;
 
-#define PART_ID_ADDR 0x86
-#define PART_ID_RST 0xA0
-
-#define MANUFAC_ID_ADDR 0x87
-#define MANUFAC_ID_RST 0x05
-
-#define ALS_DATA_CH1_0_ADDR 0x88
-#define ALS_DATA_CH1_0_RST 0x00
-
-#define ALS_DATA_CH1_1_ADDR 0x89
-#define ALS_DATA_CH1_1_RST 0x00
-
-#define ALS_DATA_CH0_0_ADDR 0x8A
-#define ALS_DATA_CH0_0_RST 0x00
-
-#define ALS_DATA_CH0_1_ADDR  0x8B
-#define ALS_DATA_CH0_1_RST 0x00
-
-#define ALS_STATUS_ADDR 0x8C
-#define ALS_STATUS_RST 0x00
-
-class AXL;
-typedef std::shared_ptr<AXL> AXLRef;
-
-class AXL
+class DigitalAmbientLightSensor
 {
  public:
-    AXL();
-    virtual ~AXL();
+    DigitalAmbientLightSensor();
+    virtual ~DigitalAmbientLightSensor();
     unsigned char get_controlAddress() const;
     void set_controlAddress(unsigned char _controlAddress);
     unsigned char get_controlDefaultValue() const;
@@ -84,32 +57,46 @@ class AXL
 
  private:
     unsigned char _iicSlaveAddress;
-
     unsigned char _controlAddress;
     unsigned char _controlDefaultValue;
-
     unsigned char _measurementRateAddress;
     unsigned char _measurementRateValue;
     unsigned char _partIdAddress;
     unsigned char _partIdValue;
-
     unsigned char _measurementFactoryIdAddress;
     unsigned char _measurementFactoryIdDefaultValue;
-
     unsigned char _dataChannel10Address;
     unsigned char _dataChannel10DefaultValue;
     unsigned char _dataChannel11Address;
     unsigned char _dataChannel11DefaultValue;
-
     unsigned char _dataChnnel00Address;
     unsigned char _dataChannel00DefaultValue;
-
     unsigned char _dataChannel01Address;
     unsigned char _dataChannel01DefaultValue;
-
     unsigned char _statusAddress;
     unsigned char _statusDefaultValue;
 
+ protected:
+    const unsigned char kAlsI2cSlaveAddress{0x29};
+    const unsigned char kAlsControlAddress{0x80};
+    const unsigned char kAlsControlDefaultVaue{0x00};
+    const unsigned char kAlsMeasurementRateAddress{0x85};
+    const unsigned char kAlsMeasurementRateDefaultValue{0x03};
+    const unsigned char kPartIdAddress{0x86};
+    const unsigned char kPartIdDefaultValue{0xA0};
+    const unsigned char kManufactureIdAddress{0x87};
+    const unsigned char kManufactureIdDefaultValue{0x05};
+    const unsigned char kAlsDataChannel10Address{0x88};
+    const unsigned char kAlsDataChannel10DefaultValue{0x00};
+    const unsigned char kAlsDataChannel11Address{0x89};
+    const unsigned char kAlsDataChannel11DefaultValue{0x00};
+    const unsigned char kAlsDataChannel00Address{0x8a};
+    const unsigned char kAlsDataChannel00DefaultValue{0x00};
+    const unsigned char kAlsDataChannel01Address{0x8b};
+    const unsigned char kAlsDataChannel01DefaultValue{0x00};
+    const unsigned char kAlsStatusAddress{0x8c};
+    const unsigned char kAlsStatusDefaultValue{0x00};
+
 };
 
-#endif //_AXL_HPP_
+#endif //_DIGITALAMBIENTLIGHTSENSOR_HPP_
