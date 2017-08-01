@@ -5,6 +5,10 @@
 #ifndef _ALS_HPP_
 #define _ALS_HPP_
 
+#define SLAVE_ADDRESS 0x29h
+
+#define ALS_
+
 class ALS
 {
  public:

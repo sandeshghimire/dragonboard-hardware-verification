@@ -12,6 +12,9 @@
 #ifndef I2C_EVAI2C_HPP
 #define I2C_EVAI2C_HPP
 
+class CoreI2C;
+typedef std::shared_ptr<CoreI2C> CoreI2CRef;
+
 class CoreI2C
 {
  public:
