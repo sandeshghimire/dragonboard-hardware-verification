@@ -2,7 +2,8 @@
 // Created by Sandesh Ghimire on 8/10/17.
 //
 
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 #include "eva_ir_hw_max610.h"
 
 #define IR_MESSAGE_REQUEST_LENGTH 10
@@ -18,7 +19,7 @@ int main(int argc, char **argv)
 
     if (-1 == eva_ir_open())
     {
-        std::cout << "Failed to open serial port " << std::endl;
+        printf("Failed to open serial port \n" );
     }
 
     message[0] = 0x01;
