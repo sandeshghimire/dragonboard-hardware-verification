@@ -1,4 +1,4 @@
-set(CMAKE_XCODE_ORGANIZATIONNAME "EVA Automation, Inc.")
+
 project(self_test)
 cmake_minimum_required(VERSION 3.3)
 

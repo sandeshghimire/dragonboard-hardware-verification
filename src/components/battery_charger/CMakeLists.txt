@@ -1,4 +1,3 @@
-set(CMAKE_XCODE_ORGANIZATIONNAME "EVA Automation, Inc.")
 project(battery_charger)
 cmake_minimum_required(VERSION 3.3)
 
