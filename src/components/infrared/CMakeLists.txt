@@ -18,3 +18,5 @@ source_group(${PROJECT_NAME} FILES ${ALL_SOURCE_FILES})
 
 add_library(${PROJECT_NAME} ${PLATFORM_LIBRARY_TYPE} ${ALL_SOURCE_FILES})
 
+add_executable(infraredTest infrared_test.cpp)
+target_link_libraries(infraredTest infrared)
