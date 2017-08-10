@@ -7,6 +7,12 @@
 
 
 #include <string>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <termios.h>
 
 const std::string  uart_0_filename  ("/dev/ttyMSM0");
 
@@ -17,6 +23,10 @@ class CoreUART
     virtual ~CoreUART();
  private:
     int _init();
+ public:
+    CoreUART(const std::string &_fileName);
+ private:
+    std::string _fileName;
 
 
 };
