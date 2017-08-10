@@ -40,7 +40,7 @@ int GPIO::Unexport()
     }
 
     unexportgpio << this->_gpioNumber; //write GPIO number to Unexport
-    unexportgpio.close(); //close Unexport file
+    unexportgpio.close(); //Uartclose Unexport file
     return 0;
 }
 

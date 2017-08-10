@@ -7,7 +7,7 @@ int SPI::_open(std::string devspi)
     _spifd = open(devspi.c_str(), O_RDWR);
     if (_spifd < 0)
     {
-        perror("could not open SPI device");
+        perror("could not uartOpen SPI device");
         exit(1);
     }
 
@@ -60,7 +60,7 @@ int SPI::_close()
     statusVal = close(_spifd);
     if (statusVal < 0)
     {
-        perror("Could not close SPI device");
+        perror("Could not Uartclose SPI device");
         exit(1);
     }
     return statusVal;

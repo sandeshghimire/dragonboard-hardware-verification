@@ -26,12 +26,15 @@ void CoreUART::set_fileName(const std::string &_fileName)
 {
     CoreUART::_fileName = _fileName;
 }
-int CoreUART::open()
+int CoreUART::uartOpen()
 {
+    //_uartHandle = open(_fileName, O_RDWR | O_NOCTTY);
+
     return 0;
 }
-int CoreUART::close()
+int CoreUART::uartClose()
 {
+    close(this->_uartHandle);
     return 0;
 }
 int CoreUART::read(void *message)
@@ -39,6 +42,10 @@ int CoreUART::read(void *message)
     return 0;
 }
 int CoreUART::write(void *message)
+{
+    return 0;
+}
+int CoreUART::_init()
 {
     return 0;
 }

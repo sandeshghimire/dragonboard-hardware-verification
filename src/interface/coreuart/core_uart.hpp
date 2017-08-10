@@ -41,8 +41,8 @@ class CoreUART
     CoreUART(const std::string &_fileName);
     unsigned int get_baudeRate() const;
     void set_baudeRate(unsigned int _baudeRate);
-    int open();
-    int close();
+    int uartOpen();
+    int uartClose();
     int read(void * message);
     int write(void * message);
     const std::string &get_fileName() const;
@@ -50,6 +50,9 @@ class CoreUART
  private:
     std::string _fileName;
     unsigned int _baudeRate;
+    struct termios _opts;
+    int _uartHandle;
+    int _init();
 
 };
 
