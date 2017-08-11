@@ -203,7 +203,6 @@ int eva_ir_write(const unsigned char *message, int length, unsigned char *respon
 
         _internal_mutex_unlock();
     }
-
     return total;
 }
 

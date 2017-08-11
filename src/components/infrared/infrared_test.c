@@ -3,7 +3,6 @@
 //
 
 #include <stdio.h>
-#include <stdlib.h>
 #include "eva_ir_hw_max610.h"
 
 #define IR_MESSAGE_REQUEST_LENGTH 10
@@ -19,7 +18,7 @@ int main(int argc, char **argv)
 
     if (-1 == eva_ir_open())
     {
-        printf("Failed to open serial port \n" );
+        printf("Failed to open serial port \n");
     }
 
     message[0] = 0x01;

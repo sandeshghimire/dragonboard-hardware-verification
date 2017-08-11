@@ -8,7 +8,7 @@ list(
 
 list(
         APPEND SOURCE_FILES
-        eva_ir_hw_max610.c
+        uart_test.c
 )
 
 set(ALL_SOURCE_FILES ${HEADER_FILES} ${SOURCE_FILES})
